@@ -25,6 +25,7 @@
     "react-native-camera-kit": "^13.0.0",
     "react-native-gesture-handler": "~2.14.0",
     "react-native-maps": "^1.13.0",
+    "react-native-sqlite-storage": "^6.0.1",
     "react-native-web": "~0.19.6",
     "react-navigation": "^5.0.0"
   },
