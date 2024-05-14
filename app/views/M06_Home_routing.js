@@ -36,16 +36,8 @@ export class M06_Home extends React.Component {
             onPress={() => this.props.navigation.navigate('Camera')}
           />
           <Button
-            title="Anar a Mapes"
-            onPress={() => this.props.navigation.navigate('Mapes')}
-          />
-          <Button
             title="Anar a SQLite"
             onPress={() => this.props.navigation.navigate('SQLite')}
-          />
-            <Button
-            title="Anar a Suma"
-            onPress={() => this.props.navigation.navigate('Suma')}
           />
         </View>
       );
