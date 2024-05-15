@@ -48,14 +48,14 @@ export class M09_Sqlite extends React.Component {
       tx.executeSql("insert into items (done, value) values (0, ?)", ['Day d, 1945']);
       tx.executeSql("insert into items (done, value) values (1, ?)", ['Stalingrado, 1400']);
       tx.executeSql("insert into items (done, value) values (1, ?)", ['Guerras de los Balcanes,1912']);
-      tx.executeSql("insert into items (done, value) values (1, ?)", ['Hola,1235']);
+      tx.executeSql("insert into items (done, value) values (1, ?)", ['Primera Guerra Mundial,1914']);
     });
 
     console.log('creada taula');
 
     db.transaction(
       tx => {
-        tx.executeSql("select * from items where value in (?, ?, ?, ?)", ['Day d, 1945', 'Stalingrado, 1400', 'Guerras de los Balcanes,1912','Hola,1235'], (_, { rows }) => {
+        tx.executeSql("select * from items where value in (?, ?, ?, ?)", ['Day d, 1945', 'Stalingrado, 1400', 'Guerras de los Balcanes,1912','Primera Guerra Mundial,1914'], (_, { rows }) => {
           const items = rows._array;
           this.setState({ items });
         });
