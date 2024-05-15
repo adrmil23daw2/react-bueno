@@ -25,7 +25,6 @@ export class M06_Detalls extends React.Component {
           <Text>el curs és: {JSON.stringify(this.props.route.params.curs)}</Text>
     
           <Button title="Tornar a Home" onPress={() => this.props.navigation.navigate('Home')} />
-          <Button title="Go back" onPress={() => this.props.navigation.navigate.goBack()} />
         </View>
       );
     }
